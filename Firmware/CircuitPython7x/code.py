@@ -15,6 +15,7 @@ import bitbangio
 import os
 import io
 
+#Mount SD Card Storage
 spi = bitbangio.SPI(board.CLK, board.CMD, board.DAT0)
 cs = DigitalInOut(board.DAT3)
 sdcard = adafruit_sdcard.SDCard(spi, cs)
@@ -26,6 +27,7 @@ with open("/sd/testwrite.csv", mode="w", encoding="utf-8") as writablefile:
     csvwriter.writerow(["I", "love", "CircuitPython", "!"])
     csvwriter.writerow(["Spam"] * 3)
 
+#ESP32 Initialize
 print("ESP32 Initialize")
 
 esp32_cs = DigitalInOut(board.D5)
@@ -59,7 +61,7 @@ with open("/sd/testwrite.csv", "rb", encoding="utf-8") as file:
 
 # Create a new file
 base_url = "https://api.github.com/repos/WheeCairV2/WheeCairV2_data/contents/Test3.csv"
-encoded = base64.encodebytes(bytes((data),"utf-8"))#base64.encodebytes((bytes(data, "utf-8")))
+encoded = base64.encodebytes(bytes((data),"utf-8"))
 data = {
     "message": str("Creating a new CSV file", "utf-8"),
     "content": str(encoded, "utf-8")
@@ -73,4 +75,4 @@ response = requests.put(
 
 print(response.status_code)
 print(response.json())
-io.BytesIO(data, "utf-8")
+
