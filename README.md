@@ -12,10 +12,11 @@ Why don't I just use Arduino IoT? Well because as much as that service is intere
 - [x] Upload CSV file to GitHub 
 - [ ] Connect BME280 sensor and have its data appended to a CSV that uploads to Github Repo every x minutes
 - [ ] Connect Plantower PM sensor and have its data appended to a CSV that uploads to Github Repo every x minutes
+- [x] Connect AQI sensor and have its data upload to Adafruit IO every x minutes (https://learn.adafruit.com/diy-air-quality-monitor)
 - [ ] Cry
 - [ ] Build a website for Julia to work with.
 - [ ] Run Julia on a Virtual Private Server and builds said website
-- [ ] Write some funny program that allows Julia to get the data CSV and plot it in realtime using Makie.jl
+- [ ] Write some funny program that allows Julia to get the data from Github/Adafruit IO and plot it in realtime using Makie.jl
 - [ ] Cry
 - [ ] Create a PCB to connect everything together in a small formfactor
 - [ ] Build a weather proof housing for the electronics
