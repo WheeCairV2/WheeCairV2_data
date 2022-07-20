@@ -1,8 +1,6 @@
 # WheeCairV2_data
 
-This repository is a subset or continuation in a different direction to https://github.com/dr-fischer/wheeCAIR. Basically same concept except the microcontroller (Teensy 4.1) has a ESP32 WIFI module that allows it to upload its data to GitHub which then can be processed by other programming languages in real time. (Ex. for this repo it is Julia).
-
-Why don't I just use Arduino IoT? Well because as much as that service is interesting it also comes at the cost of the data not being as open source, making it difficult for others to interpret the data with whatever method they choose (plus it's a service).
+This repository is a subset or continuation in a different direction to https://github.com/dr-fischer/wheeCAIR. Basically same concept except the microcontroller (Teensy 4.1) has a ESP32 WIFI module that allows it to upload its data to GitHub/Arduino IoT which then can be processed by other programming languages in real time. (Ex. for this repo it is Julia).
 
 ## The Plan
 - [x] Cry
