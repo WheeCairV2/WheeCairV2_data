@@ -1,0 +1,2 @@
+Adafruit CircuitPython 7.3.1 on 2022-06-22; Teensy 4.1 with IMXRT1062DVJ6A
+Board ID:teensy41
